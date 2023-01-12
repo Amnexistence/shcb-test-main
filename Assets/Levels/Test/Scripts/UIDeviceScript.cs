@@ -24,6 +24,8 @@ public static event Action ActionChange5;
 public static event Action ActionChange6;
 
 public int UIDeviceOrderIndex;
+[HideInInspector]
+public int DeviceOrderIndex;
 
 void Start()
 {
