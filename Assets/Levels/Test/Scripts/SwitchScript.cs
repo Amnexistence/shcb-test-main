@@ -17,10 +17,40 @@ public class SwitchScript : MonoBehaviour
 	[HideInInspector]
 	public bool State;
 	
+	[HideInInspector]
+	public int isCharged;
+	
     // Start is called before the first frame update
     void Awake()
     {
 	_pss = PowerSource.GetComponent<PowerSourceScript>();
+	
+	if (ConnectedObject1 != null)
+	{
+	_pus1 = ConnectedObject1.GetComponent<PowerUsageScript>();
+	_pus1.DevicesCount += 1;
+	}
+	if (ConnectedObject2 != null)
+	{
+	_pus2 = ConnectedObject2.GetComponent<PowerUsageScript>();
+	_pus2.DevicesCount += 1;
+	}
+	if (ConnectedObject3 != null)
+	{
+	_pus3 = ConnectedObject3.GetComponent<PowerUsageScript>();
+	_pus3.DevicesCount += 1;
+	}
+	if (ConnectedObject4 != null)
+	{
+	_pus4 = ConnectedObject4.GetComponent<PowerUsageScript>();
+	_pus4.DevicesCount += 1;
+	}
+	if (ConnectedObject5 != null)
+	{
+	_pus5 = ConnectedObject5.GetComponent<PowerUsageScript>();
+	_pus5.DevicesCount += 1;
+	}
+	
 	}
 	
 	public void SwitchOn()
@@ -28,38 +58,39 @@ public class SwitchScript : MonoBehaviour
 	if (ConnectedObject1 != null)
 	{
 	_pus1 = ConnectedObject1.GetComponent<PowerUsageScript>();
-	//_pus1.enabled = true;
 	_pus1.DeviceCounter += 1;
 	_pus1.ConductCheck();
 	//ConductedPower = ConductedPower + _pus1.PowerUsage;
+	
+	//isCharged = 1;
 	}
 	
 	if (ConnectedObject2 != null)
 	{
 	_pus2 = ConnectedObject2.GetComponent<PowerUsageScript>();
-	_pus1.enabled = true;
-	ConductedPower = ConductedPower + _pus2.PowerUsage;
+	_pus2.DeviceCounter += 1;
+	_pus2.ConductCheck();
 	}
 	
 	if (ConnectedObject3 != null)
 	{
 	_pus3 = ConnectedObject3.GetComponent<PowerUsageScript>();
-	_pus1.enabled = true;
-	ConductedPower = ConductedPower + _pus3.PowerUsage;
+	_pus3.DeviceCounter += 1;
+	_pus3.ConductCheck();
 	}
 	
 	if (ConnectedObject4 != null)
 	{
 	_pus4 = ConnectedObject4.GetComponent<PowerUsageScript>();
-	_pus1.enabled = true;
-	ConductedPower = ConductedPower + _pus4.PowerUsage;
+	_pus4.DeviceCounter += 1;
+	_pus4.ConductCheck();
 	}
 	
 	if (ConnectedObject5 != null)
 	{
 	_pus5 = ConnectedObject5.GetComponent<PowerUsageScript>();
-	_pus1.enabled = true;
-	ConductedPower = ConductedPower + _pus5.PowerUsage;
+	_pus5.DeviceCounter += 1;
+	_pus5.ConductCheck();
 	}
 	
 	_pss = PowerSource.GetComponent<PowerSourceScript>();
@@ -80,29 +111,29 @@ public class SwitchScript : MonoBehaviour
 	if (ConnectedObject2 != null)
 	{
 	_pus2 = ConnectedObject2.GetComponent<PowerUsageScript>();
-	//ConductedPower = ConductedPower - _pus2.PowerUsage;
-	_pus2.enabled = false;
+	_pus2.DeviceCounter -= 1;
+	_pus2.ConductCheck();
 	}
 	
 	if (ConnectedObject3 != null)
 	{
 	_pus3 = ConnectedObject3.GetComponent<PowerUsageScript>();
-	//ConductedPower = ConductedPower - _pus3.PowerUsage;
-	_pus3.enabled = false;
+	_pus3.DeviceCounter -= 1;
+	_pus3.ConductCheck();
 	}
 	
 	if (ConnectedObject4 != null)
 	{
 	_pus4 = ConnectedObject4.GetComponent<PowerUsageScript>();
-	//ConductedPower = ConductedPower - _pus4.PowerUsage;
-	_pus4.enabled = false;
+	_pus4.DeviceCounter -= 1;
+	_pus4.ConductCheck();
 	}
 	
 	if (ConnectedObject5 != null)
 	{
 	_pus5 = ConnectedObject5.GetComponent<PowerUsageScript>();
-	//ConductedPower = ConductedPower - _pus5.PowerUsage;
-	_pus5.enabled = false;
+	_pus5.DeviceCounter -= 1;
+	_pus5.ConductCheck();
 	}
 	
 	//_pss = PowerSource.GetComponent<PowerSourceScript>();

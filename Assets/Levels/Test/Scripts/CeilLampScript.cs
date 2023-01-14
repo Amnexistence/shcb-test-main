@@ -7,7 +7,7 @@ public class CeilLampScript : MonoBehaviour
 	
 	public Material OffLampMat;
 	public Material OnLampMat;
-	public int UIOrder;
+	//public int UIOrder;
 	MeshRenderer _mr;
 	DeviceActionScript _das;
     
@@ -20,13 +20,13 @@ public class CeilLampScript : MonoBehaviour
     void OnEnable()
     {
 	_mr.material = OnLampMat;
-	_das.UISignal(UIOrder);
+	_das.UISignal(_das.DeviceOrderIndex);
 	}
 	
 	void OnDisable()
     {
 	_mr.material = OffLampMat;
-	_das.UISignal(UIOrder);
+	_das.UISignal(_das.DeviceOrderIndex);
 	}
 
     // Update is called once per frame

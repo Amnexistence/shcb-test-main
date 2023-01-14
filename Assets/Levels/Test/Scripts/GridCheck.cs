@@ -2,14 +2,12 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.Events;
 
-public class PowerSourceScript : MonoBehaviour
+public class GridCheck : MonoBehaviour
 {
-	public int TotalPower;
-	public int CurrentPower;
 	
-	public static event Action ActionResetGrid;
+	public bool State; // !!
+	GridListScript _gls;
 	
 	public GameObject ConnectedObject1;
 	public GameObject ConnectedObject2;
@@ -17,16 +15,12 @@ public class PowerSourceScript : MonoBehaviour
 	public GameObject ConnectedObject4;
 	public GameObject ConnectedObject5;
 	
-	GridListScript _gls;
+	DeviceActionScript _das;
 	
     // Start is called before the first frame update
-    void Start()
+    void Awake()
     {
-     
-	
-	 
-	//TotalPower = 1200;
-	
+    //_gls = transform.parent.GetComponent<GridListScript>();
 	if (ConnectedObject1 != null)
 	{
 	_gls = ConnectedObject1.GetComponent<GridListScript>();
@@ -57,7 +51,7 @@ public class PowerSourceScript : MonoBehaviour
 	_gls.GridCount += 1;
 	}
 	
-	ResetGrid();
+	_das = transform.parent.GetComponent<DeviceActionScript>();
     }
 
     // Update is called once per frame
@@ -66,39 +60,79 @@ public class PowerSourceScript : MonoBehaviour
         
     }
 	
+	private void OnEnable()
+    {
+		
+	_gls = transform.parent.GetComponent<GridListScript>();
 	
-	public void ResetGrid()
+	if (_gls.GridList.Count == _gls.GridCount)
 	{
-	ActionResetGrid?.Invoke();
+	
+		
+	//for(int i = 0; i < _gls.GridList.Count; i++)	
+	//{
+	//if (_gls.GridList[i] == 1)
+	//{
+	//_das.ConductVar = 1;
+	//}
+	//}
+	
+	foreach (int i in _gls.GridList)
+	{
+	if (i == 1)
+	{
+	_das.ConductVar = 1;
+	}
+	}
+	
+	State = transform.parent.GetChild(transform.parent.childCount - 2).gameObject.activeInHierarchy;
+	
+	if (_das.ConductVar == Convert.ToInt32(!State))
+	{
+	_das.ConductVar = 0;
+	}
+	
 	if (ConnectedObject1 != null)
 	{
 	_gls = ConnectedObject1.GetComponent<GridListScript>();
-	_gls.GridList.Add(1);
+	_gls.GridList.Add(_das.ConductVar);
 	ConnectedObject1.transform.GetChild(ConnectedObject1.transform.childCount - 1).gameObject.SetActive(true);
 	}
+	
 	if (ConnectedObject2 != null)
 	{
 	_gls = ConnectedObject2.GetComponent<GridListScript>();
-	_gls.GridList.Add(1);
+	_gls.GridList.Add(_das.ConductVar);
 	ConnectedObject2.transform.GetChild(ConnectedObject2.transform.childCount - 1).gameObject.SetActive(true);
 	}
+	
 	if (ConnectedObject3 != null)
 	{
 	_gls = ConnectedObject3.GetComponent<GridListScript>();
-	_gls.GridList.Add(1);
+	_gls.GridList.Add(_das.ConductVar);
 	ConnectedObject3.transform.GetChild(ConnectedObject3.transform.childCount - 1).gameObject.SetActive(true);
 	}
+	
 	if (ConnectedObject4 != null)
 	{
 	_gls = ConnectedObject4.GetComponent<GridListScript>();
-	_gls.GridList.Add(1);
+	_gls.GridList.Add(_das.ConductVar);
 	ConnectedObject4.transform.GetChild(ConnectedObject4.transform.childCount - 1).gameObject.SetActive(true);
 	}
+	
 	if (ConnectedObject5 != null)
 	{
 	_gls = ConnectedObject5.GetComponent<GridListScript>();
-	_gls.GridList.Add(1);
+	_gls.GridList.Add(_das.ConductVar);
 	ConnectedObject5.transform.GetChild(ConnectedObject5.transform.childCount - 1).gameObject.SetActive(true);
 	}
+	
 	}
+	//else
+	//{
+	gameObject.SetActive(false);
+	//}
+		
+    
+    }
 }

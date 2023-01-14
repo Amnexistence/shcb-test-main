@@ -12,8 +12,9 @@ public class PowerUsageScript : MonoBehaviour
 	public GameObject PowerSource;
 	
 	public GameObject ConductObject;
-	
+	[HideInInspector]
 	public int DevicesCount;
+	
 	public int DeviceCounter;
 	private int WasDevicesOn;
 	
@@ -57,11 +58,13 @@ public class PowerUsageScript : MonoBehaviour
 
 	public void PowerReduce()
 	{
+	_pss = PowerSource.GetComponent<PowerSourceScript>();	
 	_pss.CurrentPower = _pss.CurrentPower - PowerUsage;		
 	}
 	
 	public void PowerIncrease()
 	{
+	_pss = PowerSource.GetComponent<PowerSourceScript>();	
 	_pss.CurrentPower = _pss.CurrentPower + PowerUsage;		
 	}
 

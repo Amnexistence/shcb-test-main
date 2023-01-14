@@ -16,19 +16,20 @@ public class SwitchActionScript : MonoBehaviour
 	
 	DeviceActionScript _das;
 	
-	public int UIOrder;
+	private int UIOrder;
 	
 	void Awake()
 	{
 	_mr = gameObject.transform.parent.transform.GetChild(1).transform.GetChild(0).transform.GetChild(0).GetComponent<MeshRenderer>();
 	_das = transform.parent.gameObject.GetComponent<DeviceActionScript>();
+	UIOrder = _das.DeviceOrderIndex;
 	}
 	
     void OnEnable()
     {
 	gameObject.transform.parent.transform.GetChild(1).transform.Rotate(0f, 0f, SwitchRotate * (-1), Space.Self);
 	_mr.material = OnIndicatorMat;
-	gameObject.transform.parent.gameObject.GetComponent<SwitchScript>().SwitchOn();
+	//gameObject.transform.parent.gameObject.GetComponent<SwitchScript>().SwitchOn();
 	_das.UISignal(UIOrder);
 	}
 	
@@ -38,7 +39,7 @@ public class SwitchActionScript : MonoBehaviour
 	gameObject.transform.parent.transform.GetChild(1).transform.Rotate(0f, 0f, SwitchRotate, Space.Self);
 	//gameObject.GetComponent<MeshRenderer>().material = IndicatorMat;
 	_mr.material = OffIndicatorMat;
-	gameObject.transform.parent.gameObject.GetComponent<SwitchScript>().SwitchOff();
+	//gameObject.transform.parent.gameObject.GetComponent<SwitchScript>().SwitchOff();
 	_das.UISignal(UIOrder);
 	}
 

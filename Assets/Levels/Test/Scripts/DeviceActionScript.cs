@@ -20,6 +20,28 @@ public class DeviceActionScript : MonoBehaviour
 	public static event Action ActionUIStatusChange6;
 	public static event Action ActionUIStatusChange7;
 	public static event Action ActionUIStatusChange8;
+	public static event Action ActionUIStatusChange9;
+	public static event Action ActionUIStatusChange10;
+	public static event Action ActionUIStatusChange11;
+	public static event Action ActionUIStatusChange12;
+	public static event Action ActionUIStatusChange13;
+	public static event Action ActionUIStatusChange14;
+	public static event Action ActionUIStatusChange15;
+	public static event Action ActionUIStatusChange16;
+	public static event Action ActionUIStatusChange17;
+	
+	private GameObject PowerSource;
+	
+	PowerSourceScript _pss;
+	
+	[HideInInspector]
+	public int ConductVar;
+	
+	void Awake()
+    {
+	PowerSource = GetComponent<GridListScript>().PowerSource;
+    _pss = PowerSource.GetComponent<PowerSourceScript>();
+    }
 	
     // Start is called before the first frame update
     void Start()
@@ -42,6 +64,17 @@ public class DeviceActionScript : MonoBehaviour
 		UIDeviceScript.ActionChange4 += Change4;
 		UIDeviceScript.ActionChange5 += Change5;
 		UIDeviceScript.ActionChange6 += Change6;
+		UIDeviceScript.ActionChange7 += Change7;
+		UIDeviceScript.ActionChange8 += Change8;
+		UIDeviceScript.ActionChange9 += Change9;
+		UIDeviceScript.ActionChange10 += Change10;
+		UIDeviceScript.ActionChange11 += Change11;
+		UIDeviceScript.ActionChange12 += Change12;
+		UIDeviceScript.ActionChange13 += Change13;
+		UIDeviceScript.ActionChange14 += Change14;
+		UIDeviceScript.ActionChange15 += Change15;
+		UIDeviceScript.ActionChange16 += Change16;
+		UIDeviceScript.ActionChange17 += Change17;
     }
 
     private void OnDisable()
@@ -53,6 +86,17 @@ public class DeviceActionScript : MonoBehaviour
 		UIDeviceScript.ActionChange4 -= Change4;
 		UIDeviceScript.ActionChange5 -= Change5;
 		UIDeviceScript.ActionChange6 -= Change6;
+		UIDeviceScript.ActionChange7 -= Change7;
+		UIDeviceScript.ActionChange8 -= Change8;
+		UIDeviceScript.ActionChange9 -= Change9;
+		UIDeviceScript.ActionChange10 -= Change10;
+		UIDeviceScript.ActionChange11 -= Change11;
+		UIDeviceScript.ActionChange12 -= Change12;
+		UIDeviceScript.ActionChange13 -= Change13;
+		UIDeviceScript.ActionChange14 -= Change14;
+		UIDeviceScript.ActionChange15 -= Change15;
+		UIDeviceScript.ActionChange16 -= Change16;
+		UIDeviceScript.ActionChange17 -= Change17;
     }
 	
 	 private void Change0()
@@ -97,12 +141,78 @@ public class DeviceActionScript : MonoBehaviour
 	CheckChange();
     }
 	
+	private void Change7()
+    {
+	UIDeviceOrderIndex = 7;
+	CheckChange();
+    }
+	
+	private void Change8()
+    {
+	UIDeviceOrderIndex = 8;
+	CheckChange();
+    }
+	
+	 private void Change9()
+    {
+	UIDeviceOrderIndex = 9;
+	CheckChange();
+    }
+	
+	private void Change10()
+    {
+	UIDeviceOrderIndex = 10;
+	CheckChange();
+    }
+	
+	private void Change11()
+    {
+	UIDeviceOrderIndex = 11;
+	CheckChange();
+    }
+	
+	private void Change12()
+    {
+	UIDeviceOrderIndex = 12;
+	CheckChange();
+    }
+	
+	private void Change13()
+    {
+	UIDeviceOrderIndex = 13;
+	CheckChange();
+    }
+	
+	private void Change14()
+    {
+	UIDeviceOrderIndex = 14;
+	CheckChange();
+    }
+	
+	private void Change15()
+    {
+	UIDeviceOrderIndex = 15;
+	CheckChange();
+    }
+	
+	private void Change16()
+    {
+	UIDeviceOrderIndex = 16;
+	CheckChange();
+    }
+	
+	private void Change17()
+    {
+	UIDeviceOrderIndex = 17;
+	CheckChange();
+    }
+	
 	private void CheckChange()
 	{
-	if (DeviceOrderIndex == UIDeviceOrderIndex)
+	if (DeviceOrderIndex == UIDeviceOrderIndex) //не работает с лампочками (не объект включаемый напрямую через UI)
 	{
-	transform.GetChild(transform.childCount - 1).gameObject.SetActive(!transform.GetChild(transform.childCount - 1).gameObject.activeInHierarchy);
-	
+	transform.GetChild(transform.childCount - 2).gameObject.SetActive(!transform.GetChild(transform.childCount - 2).gameObject.activeInHierarchy);
+	_pss.ResetGrid();
 	}
 	
 	}
@@ -144,6 +254,42 @@ ActionUIStatusChange7?.Invoke();
 else if (Index == 8)
 {
 ActionUIStatusChange8?.Invoke();	
+}
+else if (Index == 9)
+{
+ActionUIStatusChange9?.Invoke();	
+}
+else if (Index == 10)
+{
+ActionUIStatusChange10?.Invoke();	
+}
+else if (Index == 11)
+{
+ActionUIStatusChange11?.Invoke();	
+}
+else if (Index == 12)
+{
+ActionUIStatusChange12?.Invoke();	
+}
+else if (Index == 13)
+{
+ActionUIStatusChange13?.Invoke();	
+}
+else if (Index == 14)
+{
+ActionUIStatusChange14?.Invoke();	
+}
+else if (Index == 15)
+{
+ActionUIStatusChange15?.Invoke();	
+}
+else if (Index == 16)
+{
+ActionUIStatusChange16?.Invoke();	
+}
+else if (Index == 17)
+{
+ActionUIStatusChange17?.Invoke();	
 }
 }
 }
