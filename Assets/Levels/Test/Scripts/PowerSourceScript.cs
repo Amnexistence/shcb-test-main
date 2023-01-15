@@ -10,6 +10,7 @@ public class PowerSourceScript : MonoBehaviour
 	public int CurrentPower;
 	
 	public static event Action ActionResetGrid;
+	public static event Action ActionPowerUI;
 	
 	public GameObject ConnectedObject1;
 	public GameObject ConnectedObject2;
@@ -100,5 +101,15 @@ public class PowerSourceScript : MonoBehaviour
 	_gls.GridList.Add(1);
 	ConnectedObject5.transform.GetChild(ConnectedObject5.transform.childCount - 1).gameObject.SetActive(true);
 	}
+	StartCoroutine(GridAnswerWait());
 	}
+	
+	IEnumerator GridAnswerWait()
+	{
+    yield return new WaitForSeconds(0.01f);
+	StaticValues._CurrentPower = CurrentPower;
+    ActionPowerUI?.Invoke();
+	}
+	
+	
 }

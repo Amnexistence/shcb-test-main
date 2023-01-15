@@ -209,7 +209,7 @@ public class DeviceActionScript : MonoBehaviour
 	
 	private void CheckChange()
 	{
-	if (DeviceOrderIndex == UIDeviceOrderIndex) //не работает с лампочками (не объект включаемый напрямую через UI)
+	if (DeviceOrderIndex == UIDeviceOrderIndex)
 	{
 	transform.GetChild(transform.childCount - 2).gameObject.SetActive(!transform.GetChild(transform.childCount - 2).gameObject.activeInHierarchy);
 	_pss.ResetGrid();
@@ -289,7 +289,7 @@ ActionUIStatusChange16?.Invoke();
 }
 else if (Index == 17)
 {
-ActionUIStatusChange17?.Invoke();	
+ActionUIStatusChange17?.Invoke();		
 }
 }
 }
