@@ -8,8 +8,8 @@ public class DoorDriverScript : MonoBehaviour
 {
 	
 	
-	
-	private float Timer;
+	public float OurTimer;
+	public float Timer;
 	private float TimerValue;
 	public bool UseOpen;
 	private int UseValue;
@@ -45,9 +45,56 @@ public class DoorDriverScript : MonoBehaviour
 	
     void OnEnable()
     {
-	GridWaitFlag = true;
-		
+	//GridWaitFlag = true;
 	
+	if (_das.ConductVar == 1)
+	{
+	if ((Timer <= 0) && ((_pss.CurrentPower + PowerUsage) <= _pss.TotalPower))
+	{
+	_pss.CurrentPower += PowerUsage;
+	}
+	
+	if (ObjValue == 3)
+	{
+	if (gameObject.transform.parent.transform.parent.transform.GetChild(0).transform.rotation.y < 0)
+	{
+	Timer = (90 - Mathf.Abs(gameObject.transform.parent.transform.parent.transform.GetChild(0).transform.rotation.y)) / (90/OurTimer);
+	}
+	else
+	{
+	Timer = (90 - Mathf.Abs(gameObject.transform.parent.transform.parent.transform.GetChild(0).transform.rotation.eulerAngles.y)) / (90/OurTimer);
+	//because 90 / 5(*is our opened/closed time*) = 18 is (90/OurTimer)
+	}
+	//тут чёто неочевидное, в первом случае нужен обязательно просто ротейшен, а во втором обязательно эйлер
+	}
+	if (ObjValue == 2)
+	{
+	Timer = Mathf.Abs(gameObject.transform.parent.transform.parent.transform.GetChild(0).transform.rotation.eulerAngles.y) / (90/OurTimer);
+	//because 90 / 5(*is our opened/closed time*) = 18 is (90/OurTimer)
+	}
+	
+	
+	
+	//когда переключаем во время закрытия обратно в открытие получается фигня
+	
+	TimerValue = OurTimer;
+	//PowerFlag = false;
+	if (UseValue == 1)
+	{
+	
+	//m_TextComponent.text="OPENED";
+	//_pus.DeviceCounter += 1;
+	//_pus.ConductCheck();
+	
+	}
+	_das.UISignal(UIOrder);
+	
+	
+	
+	}	
+	
+	gameObject.transform.parent.transform.GetChild(gameObject.transform.parent.transform.childCount - ObjValue).gameObject.SetActive(false);
+
 	//else
 	//{
 	//gameObject.SetActive(false);
@@ -59,6 +106,12 @@ public class DoorDriverScript : MonoBehaviour
 	
 	void OnDisable()
     {
+	if (Timer > 0)
+	{
+	_pss.CurrentPower -= PowerUsage;
+	_pss.PowerUIupd();	
+	}
+	Timer = 0;
 	gameObject.transform.parent.transform.GetChild(gameObject.transform.parent.transform.childCount - ObjValue).gameObject.SetActive(true);
 	}
 	
@@ -69,20 +122,31 @@ public class DoorDriverScript : MonoBehaviour
 		
 	if (Timer > 0)
 	{
-	if (UseValue >= 1)
+	if (ObjValue == 3)
 	{
     gameObject.transform.parent.transform.parent.transform.GetChild(0).transform.Rotate(0f, ((90f/TimerValue) * Time.deltaTime)*UseValue*SideValue, 0f, Space.Self);    
 	}
 	else
 	{
-	if (gameObject.transform.parent.transform.parent.transform.GetChild(0).transform.rotation.y > 0)
+	if (gameObject.transform.parent.transform.parent.transform.GetChild(0).transform.rotation.eulerAngles.y > 0)
 	{
-	gameObject.transform.parent.transform.parent.transform.GetChild(0).transform.Rotate(0f, ((90f/TimerValue) * Time.deltaTime)*UseValue*SideValue, 0f, Space.Self);    
+	gameObject.transform.parent.transform.parent.transform.GetChild(0).transform.Rotate(0f, ((90f/TimerValue) * Time.deltaTime)*(-1), 0f, Space.Self);    
+	}
+	if (gameObject.transform.parent.transform.parent.transform.GetChild(0).transform.rotation.eulerAngles.y < 0)
+	{
+	gameObject.transform.parent.transform.parent.transform.GetChild(0).transform.Rotate(0f, ((90f/TimerValue) * Time.deltaTime), 0f, Space.Self);    
 	}
 	}
+	Timer = Timer - Time.deltaTime;
+	}
+	else if ((Timer <= 0) && (Timer > -1))
+	{
+	_pss.CurrentPower -= PowerUsage;
+	_pss.PowerUIupd();
+	Timer = -2;
 	}
 		
-    Timer = Timer - Time.deltaTime; 
+    
 	
 	/*
 	if ((Timer <= 0) && (Timer > -1f)) 
@@ -104,28 +168,9 @@ public class DoorDriverScript : MonoBehaviour
 	{
 	if (GridWaitFlag == true)
 	{
-	if (((_pss.CurrentPower + PowerUsage) <= _pss.TotalPower) && (_das.ConductVar == 1))
-	{
-	_pss.CurrentPower += PowerUsage*UseValue;		
-	Timer = 5;
-	TimerValue = Timer;
-	//PowerFlag = false;
-	if (UseValue == 1)
-	{
 	
-	//m_TextComponent.text="OPENED";
-	//_pus.DeviceCounter += 1;
-	//_pus.ConductCheck();
-	
-	}
-	_das.UISignal(UIOrder);
-	
-	
-	
-	}	
 	GridWaitFlag = false;
-	//gameObject.transform.parent.transform.GetChild(gameObject.transform.parent.transform.childCount - ObjValue).gameObject.SetActive(false);
-	gameObject.SetActive(false); //?
+	//gameObject.SetActive(false); //?
 	}
 		
 

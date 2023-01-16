@@ -111,5 +111,10 @@ public class PowerSourceScript : MonoBehaviour
     ActionPowerUI?.Invoke();
 	}
 	
+	public void PowerUIupd()
+	{
+	StaticValues._CurrentPower = CurrentPower;
+    ActionPowerUI?.Invoke();
+	}
 	
 }

@@ -18,6 +18,7 @@ public class DoorStartScript : MonoBehaviour
     // Start is called before the first frame update
     void Awake()
     {
+	_gls = transform.parent.GetComponent<GridListScript>();
     _das = transform.parent.GetComponent<DeviceActionScript>();
     }
 
@@ -31,11 +32,12 @@ public class DoorStartScript : MonoBehaviour
     {
 	
 		
-	_gls = transform.parent.GetComponent<GridListScript>();
+	
 	
 	if (_gls.GridList.Count == _gls.GridCount)
 	{
-	
+	//_gls = transform.parent.GetComponent<GridListScript>();
+	//_das = transform.parent.GetComponent<DeviceActionScript>();
 	//transform.parent.GetChild(transform.parent.childCount - 2).gameObject.SetActive(false);		
 	for(int i = 0; i < _gls.GridList.Count; i++)	
 	{
@@ -43,6 +45,7 @@ public class DoorStartScript : MonoBehaviour
 	{
 	_das.ConductVar = 1;
 	}
+	/*
 	if ((_das.ConductVar == 1) && (i == (_gls.GridList.Count - 1)))
 	{
 		
@@ -59,6 +62,7 @@ public class DoorStartScript : MonoBehaviour
 	}	
 	
 	}
+	*/
 	}	
 	
 	//foreach (int i in _gls.GridList)
