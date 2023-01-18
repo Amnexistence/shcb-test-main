@@ -20,7 +20,7 @@ public class DoorDriverScript : MonoBehaviour
 
 	//PowerUsageScript _pus;
 	
-	//private TMP_Text m_TextComponent;
+	private TMP_Text m_TextComponent;
 	
 	//public GameObject CommandText;
 	
@@ -37,7 +37,7 @@ public class DoorDriverScript : MonoBehaviour
 	UseValue = UseOpen ? 1 : -1;
 	ObjValue = UseOpen ? 3 : 2;
 	//_pus = gameObject.transform.parent.gameObject.GetComponent<PowerUsageScript>();
-	//m_TextComponent = CommandText.GetComponent<TMP_Text>();
+	m_TextComponent = gameObject.transform.parent.transform.GetChild(2).GetComponent<TMP_Text>();
 	_das = transform.parent.gameObject.GetComponent<DeviceActionScript>();
 	PowerSource = transform.parent.GetComponent<GridListScript>().PowerSource;
 	_pss = PowerSource.GetComponent<PowerSourceScript>();
@@ -66,11 +66,14 @@ public class DoorDriverScript : MonoBehaviour
 	//because 90 / 5(*is our opened/closed time*) = 18 is (90/OurTimer)
 	}
 	//тут чёто неочевидное, в первом случае нужен обязательно просто ротейшен, а во втором обязательно эйлер
+	
+	m_TextComponent.text = "OPENED";
 	}
 	if (ObjValue == 2)
 	{
 	Timer = Mathf.Abs(gameObject.transform.parent.transform.parent.transform.GetChild(0).transform.rotation.eulerAngles.y) / (90/OurTimer);
 	//because 90 / 5(*is our opened/closed time*) = 18 is (90/OurTimer)
+	m_TextComponent.text = "CLOSED";
 	}
 	
 	

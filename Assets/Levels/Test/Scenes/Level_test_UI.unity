@@ -1267,6 +1267,24 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   TimeObject: {fileID: 653926724}
   Scale: 0.5
+--- !u!1 &559186345 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2582495151817435065, guid: b64b85bcca6567849ade321933d04d5b, type: 3}
+  m_PrefabInstance: {fileID: 1337232101745975452}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &559186350
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 559186345}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 31553ca616e3ce440ab007b26edba8ec, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  DeviceOrderIndex: 0
 --- !u!1 &581880972
 GameObject:
   m_ObjectHideFlags: 0
@@ -2912,6 +2930,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Padding: {x: 0, y: 0, z: 0, w: 0}
   m_Softness: {x: 100, y: 100}
+--- !u!1 &1311707091 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1965687245840875248, guid: b64b85bcca6567849ade321933d04d5b, type: 3}
+  m_PrefabInstance: {fileID: 1337232101745975452}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1334784483
 GameObject:
   m_ObjectHideFlags: 0
@@ -3911,6 +3934,11 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 8926624870567790767, guid: ccf58d821c65c3e4bad7f4e6d087504b, type: 3}
   m_PrefabInstance: {fileID: 1374830806}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1594178863 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5908483768372979249, guid: b64b85bcca6567849ade321933d04d5b, type: 3}
+  m_PrefabInstance: {fileID: 1337232101745975452}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1627834818 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 365891918, guid: 2bd7cbc29f1abfa499f4b61e26b4b0b2, type: 3}
@@ -4157,6 +4185,35 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 5908483768372979248, guid: b64b85bcca6567849ade321933d04d5b, type: 3}
   m_PrefabInstance: {fileID: 1337232101745975452}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1711428767
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1594178863}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 215750344e3aa4843a70961222f7d7f3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  DeviceOrderIndex: 0
+--- !u!114 &1711428768
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1594178863}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a38d062e32e46e94289c8e34c9d0ef3e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  HeaderStateText: {fileID: 1311707091}
+  StateFlag: 1
+  HeaderVariantOn: 
+  HeaderVariantOff: 
 --- !u!1001 &1722928272
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5813,6 +5870,10 @@ PrefabInstance:
     - target: {fileID: 5908483768372979249, guid: b64b85bcca6567849ade321933d04d5b, type: 3}
       propertyPath: m_Name
       value: Device Block Cleaner Bot
+      objectReference: {fileID: 0}
+    - target: {fileID: 6387652121872365520, guid: b64b85bcca6567849ade321933d04d5b, type: 3}
+      propertyPath: m_text
+      value: wait
       objectReference: {fileID: 0}
     - target: {fileID: 8087787319583565549, guid: b64b85bcca6567849ade321933d04d5b, type: 3}
       propertyPath: m_AnchorMax.y
