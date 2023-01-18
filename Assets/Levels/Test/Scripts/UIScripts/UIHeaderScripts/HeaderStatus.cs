@@ -4,9 +4,7 @@ using UnityEngine;
 
 using TMPro;
 
-//dont use
-
-public class BotHeaderStatus : MonoBehaviour
+public class HeaderStatus : MonoBehaviour
 {
 	
 	public GameObject HeaderStateText;
@@ -23,7 +21,6 @@ public class BotHeaderStatus : MonoBehaviour
 
 	public void ChangeStatus()
 	{
-	/*
 	if (StateFlag == false)
 	{
 	m_TextComponent.text = HeaderVariantOn;	
@@ -34,7 +31,6 @@ public class BotHeaderStatus : MonoBehaviour
 	m_TextComponent.text = HeaderVariantOff;	
 	StateFlag = false;	
 	}
-	*/
 	
 	}
 

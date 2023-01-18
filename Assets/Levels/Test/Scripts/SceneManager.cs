@@ -33,7 +33,6 @@ public class SceneManager : MonoBehaviour
 	private void OnEnable()
     {
         SceneResetScript.ActionSceneReset += Restart;
-
     }
 
     private void OnDisable()

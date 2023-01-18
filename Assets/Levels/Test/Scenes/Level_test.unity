@@ -495,12 +495,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b42512d119f64794e8dc0dc2541ff1c0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  State: 1
   ConnectedObject1: {fileID: 1437828547}
   ConnectedObject2: {fileID: 348719180}
   ConnectedObject3: {fileID: 0}
   ConnectedObject4: {fileID: 0}
   ConnectedObject5: {fileID: 0}
+  State: 1
 --- !u!1 &18538623 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5488502559412146252, guid: 030463e6a3620f743b4911b71f78bdf6, type: 3}
@@ -512,7 +512,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh24338
+  m_Name: pb_Mesh24340
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -843,8 +843,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b863c117e6dbb6d4bb345d987014d27e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  GridList: 
   PowerSource: {fileID: 920307605}
+  GridList: 
   GridCount: 0
 --- !u!43 &59123150
 Mesh:
@@ -2545,12 +2545,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b42512d119f64794e8dc0dc2541ff1c0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  State: 1
   ConnectedObject1: {fileID: 1385380451}
   ConnectedObject2: {fileID: 0}
   ConnectedObject3: {fileID: 0}
   ConnectedObject4: {fileID: 0}
   ConnectedObject5: {fileID: 0}
+  State: 1
 --- !u!43 &217938819
 Mesh:
   m_ObjectHideFlags: 0
@@ -3042,12 +3042,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b42512d119f64794e8dc0dc2541ff1c0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  State: 1
   ConnectedObject1: {fileID: 1998851701}
   ConnectedObject2: {fileID: 0}
   ConnectedObject3: {fileID: 0}
   ConnectedObject4: {fileID: 0}
   ConnectedObject5: {fileID: 0}
+  State: 1
 --- !u!1 &289293360 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 3551398354981042783, guid: d2ee769f6be0f654ca45a2374b8389f0, type: 3}
@@ -3236,7 +3236,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   OurTimer: 5
-  Timer: 0
   UseOpen: 0
   SideValue: 1
   UIOrder: 3
@@ -3412,8 +3411,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b863c117e6dbb6d4bb345d987014d27e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  GridList: 
   PowerSource: {fileID: 920307605}
+  GridList: 
   GridCount: 0
 --- !u!1 &348719180 stripped
 GameObject:
@@ -3965,8 +3964,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b863c117e6dbb6d4bb345d987014d27e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  GridList: 
   PowerSource: {fileID: 920307605}
+  GridList: 
   GridCount: 0
 --- !u!114 &406434974
 MonoBehaviour:
@@ -4577,7 +4576,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   OffIndicatorMat: {fileID: 2100000, guid: 0beffbed72a29764c911945ff80620af, type: 2}
   OnIndicatorMat: {fileID: 2100000, guid: 8f06f88536682b94abaffa2764b52f9f, type: 2}
-  StateFlag: 0
 --- !u!43 &525505120
 Mesh:
   m_ObjectHideFlags: 0
@@ -4806,12 +4804,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b42512d119f64794e8dc0dc2541ff1c0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  State: 1
   ConnectedObject1: {fileID: 1882540923}
   ConnectedObject2: {fileID: 0}
   ConnectedObject3: {fileID: 0}
   ConnectedObject4: {fileID: 0}
   ConnectedObject5: {fileID: 0}
+  State: 1
 --- !u!850595691 &540550433
 LightingSettings:
   m_ObjectHideFlags: 0
@@ -5200,12 +5198,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b42512d119f64794e8dc0dc2541ff1c0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  State: 1
   ConnectedObject1: {fileID: 1515828658}
   ConnectedObject2: {fileID: 0}
   ConnectedObject3: {fileID: 0}
   ConnectedObject4: {fileID: 0}
   ConnectedObject5: {fileID: 0}
+  State: 1
 --- !u!1001 &570420793
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5316,27 +5314,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 172262133627247603, guid: d2ee769f6be0f654ca45a2374b8389f0, type: 3}
   m_PrefabInstance: {fileID: 570420793}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &570420795
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 303103842}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4bbb7b9ffa525834490e3a01f1d9af2e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  PowerSource: {fileID: 920307605}
-  ConnectedObject1: {fileID: 1882540923}
-  ConnectedObject2: {fileID: 0}
-  ConnectedObject3: {fileID: 0}
-  ConnectedObject4: {fileID: 0}
-  ConnectedObject5: {fileID: 0}
-  ConductedPower: 0
-  State: 0
-  isCharged: 0
 --- !u!114 &570420796
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5364,8 +5341,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b863c117e6dbb6d4bb345d987014d27e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  GridList: 
   PowerSource: {fileID: 920307605}
+  GridList: 
   GridCount: 0
 --- !u!1 &595656234
 GameObject:
@@ -5413,7 +5390,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   OffIndicatorMat: {fileID: 2100000, guid: 0beffbed72a29764c911945ff80620af, type: 2}
   OnIndicatorMat: {fileID: 2100000, guid: 8f06f88536682b94abaffa2764b52f9f, type: 2}
-  StateFlag: 0
 --- !u!1 &611361268
 GameObject:
   m_ObjectHideFlags: 0
@@ -5600,7 +5576,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   OffIndicatorMat: {fileID: 2100000, guid: 0beffbed72a29764c911945ff80620af, type: 2}
   OnIndicatorMat: {fileID: 2100000, guid: 8f06f88536682b94abaffa2764b52f9f, type: 2}
-  StateFlag: 0
 --- !u!1001 &631977298
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6528,7 +6503,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   OffIndicatorMat: {fileID: 2100000, guid: 0beffbed72a29764c911945ff80620af, type: 2}
   OnIndicatorMat: {fileID: 2100000, guid: 8f06f88536682b94abaffa2764b52f9f, type: 2}
-  StateFlag: 0
 --- !u!1 &857389595
 GameObject:
   m_ObjectHideFlags: 0
@@ -6575,7 +6549,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   OffIndicatorMat: {fileID: 2100000, guid: 0beffbed72a29764c911945ff80620af, type: 2}
   OnIndicatorMat: {fileID: 2100000, guid: 8f06f88536682b94abaffa2764b52f9f, type: 2}
-  StateFlag: 0
 --- !u!43 &857733785
 Mesh:
   m_ObjectHideFlags: 0
@@ -6879,7 +6852,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3406050922482449686, guid: c1b9f866184e2884d9d89e8614e5ff27, type: 3}
       propertyPath: m_Layer
-      value: 7
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4905527425196278769, guid: c1b9f866184e2884d9d89e8614e5ff27, type: 3}
       propertyPath: m_Mesh
@@ -6909,7 +6882,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh24558
+  m_Name: pb_Mesh24560
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -7282,7 +7255,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   OffIndicatorMat: {fileID: 2100000, guid: 0beffbed72a29764c911945ff80620af, type: 2}
   OnIndicatorMat: {fileID: 2100000, guid: 8f06f88536682b94abaffa2764b52f9f, type: 2}
-  StateFlag: 0
 --- !u!1001 &971734267
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7512,7 +7484,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   OffIndicatorMat: {fileID: 2100000, guid: 0beffbed72a29764c911945ff80620af, type: 2}
   OnIndicatorMat: {fileID: 2100000, guid: 8f06f88536682b94abaffa2764b52f9f, type: 2}
-  StateFlag: 0
 --- !u!1 &1017878768 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 3551398354981042783, guid: d2ee769f6be0f654ca45a2374b8389f0, type: 3}
@@ -7562,9 +7533,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7300b759a3884af4aafc728d2700af7b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  LightIndex: 0
   OffLampMat: {fileID: 2100000, guid: d8a62ab40d402914da72efdd0c273534, type: 2}
   OnLampMat: {fileID: 2100000, guid: 559c96d2754c1774d952cc0f2979bbd0, type: 2}
-  LightIndex: 0
 --- !u!43 &1093284766
 Mesh:
   m_ObjectHideFlags: 0
@@ -8182,8 +8153,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b863c117e6dbb6d4bb345d987014d27e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  GridList: 
   PowerSource: {fileID: 920307605}
+  GridList: 
   GridCount: 0
 --- !u!1 &1145716625
 GameObject:
@@ -8266,8 +8237,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b863c117e6dbb6d4bb345d987014d27e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  GridList: 
   PowerSource: {fileID: 920307605}
+  GridList: 
   GridCount: 0
 --- !u!43 &1178618901
 Mesh:
@@ -8551,9 +8522,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7300b759a3884af4aafc728d2700af7b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  LightIndex: 1
   OffLampMat: {fileID: 2100000, guid: d8a62ab40d402914da72efdd0c273534, type: 2}
   OnLampMat: {fileID: 2100000, guid: 559c96d2754c1774d952cc0f2979bbd0, type: 2}
-  LightIndex: 1
 --- !u!1001 &1327504177
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8678,7 +8649,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   OffIndicatorMat: {fileID: 2100000, guid: 0beffbed72a29764c911945ff80620af, type: 2}
   OnIndicatorMat: {fileID: 2100000, guid: 8f06f88536682b94abaffa2764b52f9f, type: 2}
-  StateFlag: 0
 --- !u!1001 &1348090612
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8801,12 +8771,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b42512d119f64794e8dc0dc2541ff1c0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  State: 0
   ConnectedObject1: {fileID: 617891974}
   ConnectedObject2: {fileID: 0}
   ConnectedObject3: {fileID: 0}
   ConnectedObject4: {fileID: 0}
   ConnectedObject5: {fileID: 0}
+  State: 0
 --- !u!1 &1349378604
 GameObject:
   m_ObjectHideFlags: 0
@@ -8888,8 +8858,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b863c117e6dbb6d4bb345d987014d27e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  GridList: 
   PowerSource: {fileID: 920307605}
+  GridList: 
   GridCount: 0
 --- !u!1 &1365092534
 GameObject:
@@ -8936,7 +8906,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   OurTimer: 5
-  Timer: 0
   UseOpen: 1
   SideValue: 1
   UIOrder: 3
@@ -9297,8 +9266,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b863c117e6dbb6d4bb345d987014d27e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  GridList: 
   PowerSource: {fileID: 920307605}
+  GridList: 
   GridCount: 0
 --- !u!1 &1426269610
 GameObject:
@@ -9344,12 +9313,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b42512d119f64794e8dc0dc2541ff1c0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  State: 0
   ConnectedObject1: {fileID: 2080488408}
   ConnectedObject2: {fileID: 0}
   ConnectedObject3: {fileID: 0}
   ConnectedObject4: {fileID: 0}
   ConnectedObject5: {fileID: 0}
+  State: 0
 --- !u!1 &1426301924
 GameObject:
   m_ObjectHideFlags: 0
@@ -9441,7 +9410,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   OffIndicatorMat: {fileID: 2100000, guid: 0beffbed72a29764c911945ff80620af, type: 2}
   OnIndicatorMat: {fileID: 2100000, guid: 8f06f88536682b94abaffa2764b52f9f, type: 2}
-  StateFlag: 0
 --- !u!1 &1437828547 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 3701008896104864288, guid: 91085d37a3c4da6429677fa7b49dac73, type: 3}
@@ -9452,23 +9420,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 7870429339412488838, guid: 91085d37a3c4da6429677fa7b49dac73, type: 3}
   m_PrefabInstance: {fileID: 8334916311006963771}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1437828549
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1437828547}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7d854cf956d40f744b12fdd35b11bfe4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  PowerUsage: 50
-  PowerSource: {fileID: 920307605}
-  ConductObject: {fileID: 289293360}
-  DevicesCount: 0
-  DeviceCounter: 0
 --- !u!114 &1437828550
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9496,8 +9447,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b863c117e6dbb6d4bb345d987014d27e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  GridList: 
   PowerSource: {fileID: 920307605}
+  GridList: 
   GridCount: 0
 --- !u!43 &1451267912
 Mesh:
@@ -9888,7 +9839,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   OffIndicatorMat: {fileID: 2100000, guid: 0beffbed72a29764c911945ff80620af, type: 2}
   OnIndicatorMat: {fileID: 2100000, guid: 8f06f88536682b94abaffa2764b52f9f, type: 2}
-  StateFlag: 0
 --- !u!1 &1515828658 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4094140340906669800, guid: 5d9eddf59daa4a44bb16bc6c7650f930, type: 3}
@@ -9911,8 +9861,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b863c117e6dbb6d4bb345d987014d27e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  GridList: 
   PowerSource: {fileID: 920307605}
+  GridList: 
   GridCount: 0
 --- !u!114 &1515828664
 MonoBehaviour:
@@ -10320,12 +10270,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b42512d119f64794e8dc0dc2541ff1c0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  State: 1
   ConnectedObject1: {fileID: 1178261233}
   ConnectedObject2: {fileID: 0}
   ConnectedObject3: {fileID: 0}
   ConnectedObject4: {fileID: 0}
   ConnectedObject5: {fileID: 0}
+  State: 1
 --- !u!1 &1584907892 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 544567281748608909, guid: 79b9283ecfc9f0242a41ccffa643e060, type: 3}
@@ -10346,14 +10296,9 @@ MonoBehaviour:
   MaximumPower: 3600
   MyPower: 3600
   MyState: 0
-  Timer: 0
-  ChooseMove: 1
   TargetPositionList:
   - 0
   - 0
-  VisitedList: []
-  PriorList: []
-  BotStep: 0
 --- !u!1 &1595006824
 GameObject:
   m_ObjectHideFlags: 0
@@ -10702,7 +10647,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh24628
+  m_Name: pb_Mesh24630
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -11506,8 +11451,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b863c117e6dbb6d4bb345d987014d27e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  GridList: 
   PowerSource: {fileID: 920307605}
+  GridList: 
   GridCount: 0
 --- !u!1 &1712573853
 GameObject:
@@ -11555,7 +11500,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   OffIndicatorMat: {fileID: 2100000, guid: 0beffbed72a29764c911945ff80620af, type: 2}
   OnIndicatorMat: {fileID: 2100000, guid: 8f06f88536682b94abaffa2764b52f9f, type: 2}
-  StateFlag: 0
 --- !u!1 &1714499808
 GameObject:
   m_ObjectHideFlags: 0
@@ -11602,7 +11546,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   OffIndicatorMat: {fileID: 2100000, guid: 0beffbed72a29764c911945ff80620af, type: 2}
   OnIndicatorMat: {fileID: 2100000, guid: 8f06f88536682b94abaffa2764b52f9f, type: 2}
-  StateFlag: 0
 --- !u!1 &1716769834
 GameObject:
   m_ObjectHideFlags: 0
@@ -11698,7 +11641,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   OffIndicatorMat: {fileID: 2100000, guid: 0beffbed72a29764c911945ff80620af, type: 2}
   OnIndicatorMat: {fileID: 2100000, guid: 8f06f88536682b94abaffa2764b52f9f, type: 2}
-  StateFlag: 0
 --- !u!43 &1740739415
 Mesh:
   m_ObjectHideFlags: 0
@@ -12650,23 +12592,6 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 1684934527256959382, guid: bed348c1be16d994e9e26e615014b115, type: 3}
   m_PrefabInstance: {fileID: 229311049}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1882540926
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1882540923}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7d854cf956d40f744b12fdd35b11bfe4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  PowerUsage: 100
-  PowerSource: {fileID: 920307605}
-  ConductObject: {fileID: 303103842}
-  DevicesCount: 0
-  DeviceCounter: 0
 --- !u!114 &1882540929
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12694,8 +12619,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b863c117e6dbb6d4bb345d987014d27e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  GridList: 
   PowerSource: {fileID: 920307605}
+  GridList: 
   GridCount: 0
 --- !u!43 &1890783905
 Mesh:
@@ -13370,8 +13295,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b863c117e6dbb6d4bb345d987014d27e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  GridList: 
   PowerSource: {fileID: 920307605}
+  GridList: 
   GridCount: 0
 --- !u!43 &1981159697
 Mesh:
@@ -13723,8 +13648,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b863c117e6dbb6d4bb345d987014d27e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  GridList: 
   PowerSource: {fileID: 920307605}
+  GridList: 
   GridCount: 0
 --- !u!114 &1998851704
 MonoBehaviour:
@@ -13799,7 +13724,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   OffIndicatorMat: {fileID: 2100000, guid: 0beffbed72a29764c911945ff80620af, type: 2}
   OnIndicatorMat: {fileID: 2100000, guid: 8f06f88536682b94abaffa2764b52f9f, type: 2}
-  StateFlag: 0
 --- !u!1001 &2025756105
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -13913,8 +13837,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b863c117e6dbb6d4bb345d987014d27e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  GridList: 
   PowerSource: {fileID: 920307605}
+  GridList: 
   GridCount: 0
 --- !u!1 &2028890181
 GameObject:
@@ -14711,12 +14635,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b42512d119f64794e8dc0dc2541ff1c0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  State: 1
   ConnectedObject1: {fileID: 90000773}
   ConnectedObject2: {fileID: 430498735}
   ConnectedObject3: {fileID: 1017878768}
   ConnectedObject4: {fileID: 1670709439}
   ConnectedObject5: {fileID: 0}
+  State: 1
 --- !u!1001 &2075846751
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -14854,8 +14778,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b863c117e6dbb6d4bb345d987014d27e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  GridList: 
   PowerSource: {fileID: 920307605}
+  GridList: 
   GridCount: 0
 --- !u!1 &2080488408 stripped
 GameObject:
@@ -14879,8 +14803,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b863c117e6dbb6d4bb345d987014d27e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  GridList: 
   PowerSource: {fileID: 920307605}
+  GridList: 
   GridCount: 0
 --- !u!114 &2080488414
 MonoBehaviour:
@@ -15083,8 +15007,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b863c117e6dbb6d4bb345d987014d27e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  GridList: 
   PowerSource: {fileID: 920307605}
+  GridList: 
   GridCount: 0
 --- !u!114 &2092341293
 MonoBehaviour:
@@ -15394,7 +15318,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   OffIndicatorMat: {fileID: 2100000, guid: 0beffbed72a29764c911945ff80620af, type: 2}
   OnIndicatorMat: {fileID: 2100000, guid: 8f06f88536682b94abaffa2764b52f9f, type: 2}
-  StateFlag: 0
 --- !u!1 &2146941364
 GameObject:
   m_ObjectHideFlags: 0
@@ -15441,7 +15364,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   OffIndicatorMat: {fileID: 2100000, guid: 0beffbed72a29764c911945ff80620af, type: 2}
   OnIndicatorMat: {fileID: 2100000, guid: 8f06f88536682b94abaffa2764b52f9f, type: 2}
-  StateFlag: 0
 --- !u!4 &172262131696159726 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7235660252047346055, guid: 3ac9501c7655dbf4496b16a1dcd37c86, type: 3}
@@ -15474,8 +15396,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b863c117e6dbb6d4bb345d987014d27e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  GridList: 
   PowerSource: {fileID: 920307605}
+  GridList: 
   GridCount: 0
 --- !u!1001 &544567282445218499
 PrefabInstance:
@@ -15671,7 +15593,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3406050922482449686, guid: c1b9f866184e2884d9d89e8614e5ff27, type: 3}
       propertyPath: m_Layer
-      value: 7
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3406050922482449686, guid: c1b9f866184e2884d9d89e8614e5ff27, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -15865,8 +15787,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b863c117e6dbb6d4bb345d987014d27e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  GridList: 
   PowerSource: {fileID: 920307605}
+  GridList: 
   GridCount: 0
 --- !u!1001 &3412212358818370248
 PrefabInstance:
@@ -16079,8 +16001,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b863c117e6dbb6d4bb345d987014d27e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  GridList: 
   PowerSource: {fileID: 920307605}
+  GridList: 
   GridCount: 0
 --- !u!1001 &6358683487873226456
 PrefabInstance:
@@ -16230,8 +16152,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b863c117e6dbb6d4bb345d987014d27e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  GridList: 
   PowerSource: {fileID: 920307605}
+  GridList: 
   GridCount: 0
 --- !u!114 &6484695515905750385
 MonoBehaviour:
@@ -16255,13 +16177,17 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 808765279}
     m_Modifications:
+    - target: {fileID: 749862644498209895, guid: 3ac9501c7655dbf4496b16a1dcd37c86, type: 3}
+      propertyPath: m_RootOrder
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 1465874950250226312, guid: 3ac9501c7655dbf4496b16a1dcd37c86, type: 3}
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: 559094236}
     - target: {fileID: 1465874950250226312, guid: 3ac9501c7655dbf4496b16a1dcd37c86, type: 3}
       propertyPath: m_VersionIndex
-      value: 158
+      value: 164
       objectReference: {fileID: 0}
     - target: {fileID: 2700473822297527079, guid: 3ac9501c7655dbf4496b16a1dcd37c86, type: 3}
       propertyPath: m_Mesh
@@ -16277,7 +16203,11 @@ PrefabInstance:
       objectReference: {fileID: 8053544}
     - target: {fileID: 5210138947862183982, guid: 3ac9501c7655dbf4496b16a1dcd37c86, type: 3}
       propertyPath: m_VersionIndex
-      value: 161
+      value: 167
+      objectReference: {fileID: 0}
+    - target: {fileID: 5480347802428186495, guid: 3ac9501c7655dbf4496b16a1dcd37c86, type: 3}
+      propertyPath: m_RootOrder
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 6287267153043613739, guid: 3ac9501c7655dbf4496b16a1dcd37c86, type: 3}
       propertyPath: m_Name
@@ -17783,13 +17713,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d165351ef3a9d2842bb6de60fe1c5b49, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  TotalPower: 12000
-  CurrentPower: 0
   ConnectedObject1: {fileID: 303103842}
   ConnectedObject2: {fileID: 289293360}
   ConnectedObject3: {fileID: 1352393966}
   ConnectedObject4: {fileID: 0}
   ConnectedObject5: {fileID: 0}
+  TotalPower: 12000
+  CurrentPower: 0
 --- !u!1001 &8917480979900558861
 PrefabInstance:
   m_ObjectHideFlags: 0

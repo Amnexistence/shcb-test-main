@@ -7,10 +7,9 @@ public class PointLightScript : MonoBehaviour
 {
 	private int LightOrderIndex;
 	private int LampOrderIndex;
-	Light _l;
 	private bool BoolIntensity;
+	Light _l;
 	
-    // Start is called before the first frame update
     void Awake()
     {
     LightOrderIndex = transform.GetSiblingIndex();
