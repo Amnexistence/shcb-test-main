@@ -18,7 +18,7 @@ public class LampScript : MonoBehaviour
 	_l.enabled = true;
 	_l = gameObject.transform.parent.transform.GetChild(1).GetComponent<Light>();
 	_l.enabled = true;
-	_das.UISignal(_das.DeviceOrderIndex);
+	_das.UISignal();
 	}
 	
 	void OnDisable()
@@ -27,7 +27,7 @@ public class LampScript : MonoBehaviour
 	_l.enabled = false;
 	_l = gameObject.transform.parent.transform.GetChild(1).GetComponent<Light>();
 	_l.enabled = false;
-	_das.UISignal(_das.DeviceOrderIndex);
+	_das.UISignal();
 	}
 
     // Update is called once per frame

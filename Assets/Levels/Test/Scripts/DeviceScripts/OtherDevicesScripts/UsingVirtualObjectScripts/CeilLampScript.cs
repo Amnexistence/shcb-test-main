@@ -13,8 +13,7 @@ public class CeilLampScript : MonoBehaviour
 	MeshRenderer _mr;
 	DeviceActionScript _das;
     
-	public static event Action ActionCeilLamp0;
-	public static event Action ActionCeilLamp1;
+	public static event Action ActionCeilLamp;
 	
 	void Awake()
 	{
@@ -25,27 +24,21 @@ public class CeilLampScript : MonoBehaviour
     void OnEnable()
     {
 	_mr.material = OnLampMat;
-	_das.UISignal(_das.DeviceOrderIndex);
+	_das.UISignal();
 	MyEvent();
 	}
 	
 	void OnDisable()
     {
 	_mr.material = OffLampMat;
-	_das.UISignal(_das.DeviceOrderIndex);
+	_das.UISignal();
 	MyEvent();
 	}
 	
 	private void MyEvent()
 	{
-	if (LightIndex == 0)
-	{
-	ActionCeilLamp0?.Invoke();
-	}
-	else if (LightIndex == 1)
-	{
-	ActionCeilLamp1?.Invoke();	
-	}	
+	StaticValues._LampOrderIndex = LightIndex;
+	ActionCeilLamp?.Invoke();	
 	}
 
     // Update is called once per frame

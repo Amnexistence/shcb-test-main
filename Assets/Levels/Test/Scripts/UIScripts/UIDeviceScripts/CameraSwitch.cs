@@ -21,9 +21,11 @@ public class CameraSwitch: MonoBehaviour, IPointerClickHandler
 	for(int i = 0; i < CameraList.Length; i++)	
 	{
 	CameraList[i].GetComponent<Camera>().enabled = false;
+	CameraList[i].GetComponent<AudioListener>().enabled = false;
 	}
 	
 	CameraList[0].GetComponent<Camera>().enabled = true;
+	CameraList[0].GetComponent<AudioListener>().enabled = true;
 	
 	}
 	
@@ -31,12 +33,14 @@ public class CameraSwitch: MonoBehaviour, IPointerClickHandler
 {
 
 		CameraList[Current].GetComponent<Camera>().enabled = false;
+		CameraList[Current].GetComponent<AudioListener>().enabled = false;
 		Current += 1;
 		if (Current > CameraList.Length - 1)
 		{
 		Current = 0;	
 		}
 		CameraList[Current].GetComponent<Camera>().enabled = true;
+		CameraList[Current].GetComponent<AudioListener>().enabled = true;
 			
 }
 

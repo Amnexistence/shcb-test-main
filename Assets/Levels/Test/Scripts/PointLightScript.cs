@@ -28,32 +28,19 @@ public class PointLightScript : MonoBehaviour
 	
 	private void OnEnable()
     {
-        CeilLampScript.ActionCeilLamp0 += Change0;
-		CeilLampScript.ActionCeilLamp1 += Change1;
+        CeilLampScript.ActionCeilLamp += CheckChange;
 
     }
 
     private void OnDisable()
     {
-        CeilLampScript.ActionCeilLamp0 -= Change0;
-		CeilLampScript.ActionCeilLamp1 -= Change1;
+        CeilLampScript.ActionCeilLamp -= CheckChange;
     }
 	
-	 private void Change0()
-    {
-	LampOrderIndex = 0;
-	CheckChange();
-    }
-	
-	private void Change1()
-    {
-	LampOrderIndex = 1;
-	CheckChange();
-    }
 	
 	private void CheckChange()
 	{
-	if (LampOrderIndex == LightOrderIndex)
+	if (StaticValues._LampOrderIndex == LightOrderIndex)
 	{
 	BoolIntensity = !BoolIntensity;
 	_l.intensity = Convert.ToInt32(BoolIntensity);

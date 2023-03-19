@@ -15,7 +15,7 @@ public class DoorDriverScript : MonoBehaviour
 	private int ObjValue;
 	[HideInInspector]
 	public int SideValue = 1; //переменная для открывания двери роботом в ту или иную сторону
-	public int UIOrder;
+	//public int UIOrder;
 	public int PowerUsage;
 	private TMP_Text m_TextComponent;
 	DeviceActionScript _das;
@@ -63,7 +63,7 @@ public class DoorDriverScript : MonoBehaviour
 	
 	
 	TimerValue = OurTimer;
-	_das.UISignal(UIOrder);
+	_das.UISignal();
 	
 	}	
 	gameObject.transform.parent.transform.GetChild(gameObject.transform.parent.transform.childCount - ObjValue).gameObject.SetActive(false);

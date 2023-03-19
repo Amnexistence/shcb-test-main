@@ -122,7 +122,7 @@ NavMeshSettings:
     preserveTilesOutsideBounds: 0
     debug:
       m_Flags: 0
-  m_NavMeshData: {fileID: 0}
+  m_NavMeshData: {fileID: 23800000, guid: 0a2e6204ac8cbcc42b1d9c851371e8f5, type: 2}
 --- !u!114 &16679789
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -630,7 +630,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 31553ca616e3ce440ab007b26edba8ec, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  DeviceOrderIndex: 0
 --- !u!114 &189860331
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1211,7 +1210,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0.0006643818}
+  m_AnchoredPosition: {x: 0, y: -0.00011444092}
   m_SizeDelta: {x: 0, y: 886.3367}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &481993302
@@ -1284,7 +1283,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 31553ca616e3ce440ab007b26edba8ec, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  DeviceOrderIndex: 0
 --- !u!1 &581880972
 GameObject:
   m_ObjectHideFlags: 0
@@ -1617,7 +1615,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 31553ca616e3ce440ab007b26edba8ec, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  DeviceOrderIndex: 0
 --- !u!1001 &636782591
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1796,7 +1793,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 31553ca616e3ce440ab007b26edba8ec, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  DeviceOrderIndex: 0
 --- !u!1 &653926724 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5384229878602064079, guid: 24d2af77278110548a205a74ddc9efc1, type: 3}
@@ -1844,7 +1840,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5009165850642696832, guid: 77581754d3dbcf049bbbb9cb14afe641, type: 3}
       propertyPath: m_Name
-      value: Device Block Gate Or
+      value: Device Block Gate OR
       objectReference: {fileID: 0}
     - target: {fileID: 5009165850642696833, guid: 77581754d3dbcf049bbbb9cb14afe641, type: 3}
       propertyPath: m_Pivot.x
@@ -2227,7 +2223,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 31553ca616e3ce440ab007b26edba8ec, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  DeviceOrderIndex: 0
 --- !u!1 &776432815
 GameObject:
   m_ObjectHideFlags: 0
@@ -2533,7 +2528,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 31553ca616e3ce440ab007b26edba8ec, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  DeviceOrderIndex: 0
 --- !u!114 &862692230
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2799,7 +2793,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 31553ca616e3ce440ab007b26edba8ec, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  DeviceOrderIndex: 0
 --- !u!114 &1067679693
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3105,7 +3098,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3555906959402618990, guid: ccf58d821c65c3e4bad7f4e6d087504b, type: 3}
       propertyPath: m_Name
-      value: Device Block Ceil Lamp
+      value: Device Block A Ceil Lamp 1
       objectReference: {fileID: 0}
     - target: {fileID: 3555906959402618991, guid: ccf58d821c65c3e4bad7f4e6d087504b, type: 3}
       propertyPath: m_Pivot.x
@@ -3314,7 +3307,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1334784485}
   m_HandleRect: {fileID: 1334784484}
   m_Direction: 2
-  m_Value: 0
+  m_Value: 1
   m_Size: 1
   m_NumberOfSteps: 0
   m_OnValueChanged:
@@ -3589,7 +3582,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 31553ca616e3ce440ab007b26edba8ec, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  DeviceOrderIndex: 0
 --- !u!114 &1496251470
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3855,7 +3847,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 31553ca616e3ce440ab007b26edba8ec, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  DeviceOrderIndex: 0
 --- !u!114 &1547094512
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3912,7 +3903,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 31553ca616e3ce440ab007b26edba8ec, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  DeviceOrderIndex: 0
 --- !u!1001 &1656726830
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3958,7 +3948,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3555906959402618990, guid: ccf58d821c65c3e4bad7f4e6d087504b, type: 3}
       propertyPath: m_Name
-      value: Device Block Ceil Lamp 2
+      value: Device Block B Ceil Lamp 1
       objectReference: {fileID: 0}
     - target: {fileID: 3555906959402618991, guid: ccf58d821c65c3e4bad7f4e6d087504b, type: 3}
       propertyPath: m_Pivot.x
@@ -5023,7 +5013,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 31553ca616e3ce440ab007b26edba8ec, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  DeviceOrderIndex: 0
 --- !u!114 &2061420854
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5220,7 +5209,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4939499765225260732, guid: f391bf2cd9b2b5a4b87539c73db9f849, type: 3}
       propertyPath: m_Name
-      value: Device Block Door
+      value: Device Block Door Driver
       objectReference: {fileID: 0}
     - target: {fileID: 4939499765225260733, guid: f391bf2cd9b2b5a4b87539c73db9f849, type: 3}
       propertyPath: m_Pivot.x
@@ -5812,7 +5801,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5908483768372979249, guid: b64b85bcca6567849ade321933d04d5b, type: 3}
       propertyPath: m_Name
-      value: Device Block Cleaner Bot
+      value: Device Block Bot
       objectReference: {fileID: 0}
     - target: {fileID: 6387652121872365520, guid: b64b85bcca6567849ade321933d04d5b, type: 3}
       propertyPath: m_text
@@ -6175,7 +6164,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3555906959402618990, guid: ccf58d821c65c3e4bad7f4e6d087504b, type: 3}
       propertyPath: m_Name
-      value: Device Block Lamp
+      value: Device Block Lamp 1
       objectReference: {fileID: 0}
     - target: {fileID: 3555906959402618991, guid: ccf58d821c65c3e4bad7f4e6d087504b, type: 3}
       propertyPath: m_Pivot.x
@@ -6447,7 +6436,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5009165850642696832, guid: 77581754d3dbcf049bbbb9cb14afe641, type: 3}
       propertyPath: m_Name
-      value: Device Block Gate And
+      value: Device Block Gate AND
       objectReference: {fileID: 0}
     - target: {fileID: 5009165850642696833, guid: 77581754d3dbcf049bbbb9cb14afe641, type: 3}
       propertyPath: m_Pivot.x

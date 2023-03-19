@@ -19,13 +19,13 @@ public class GateActionScript : MonoBehaviour
     void OnEnable()
     {
 	_mr.material = OnIndicatorMat;
-	_das.UISignal(_das.DeviceOrderIndex);
+	_das.UISignal();
 	}
 	
 	 void OnDisable()
     {  
 	_mr.material = OffIndicatorMat;
-	_das.UISignal(_das.DeviceOrderIndex);
+	_das.UISignal();
 	}
 
     // Update is called once per frame

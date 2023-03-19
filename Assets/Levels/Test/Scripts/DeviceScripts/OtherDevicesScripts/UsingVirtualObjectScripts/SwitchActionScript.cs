@@ -5,7 +5,7 @@ using UnityEngine;
 public class SwitchActionScript : MonoBehaviour
 {
 	private float SwitchRotate;
-	private int UIOrder;
+	//private int UIOrder;
 	public Material OffIndicatorMat;
 	public Material OnIndicatorMat;
 	MeshRenderer _mr;
@@ -15,7 +15,7 @@ public class SwitchActionScript : MonoBehaviour
 	{
 	_mr = gameObject.transform.parent.transform.GetChild(1).transform.GetChild(0).transform.GetChild(0).GetComponent<MeshRenderer>();
 	_das = transform.parent.gameObject.GetComponent<DeviceActionScript>();
-	UIOrder = _das.DeviceOrderIndex;
+	//UIOrder = _das.DeviceOrderIndex;
 	}
 	
     void OnEnable()
@@ -23,7 +23,7 @@ public class SwitchActionScript : MonoBehaviour
 	gameObject.transform.parent.transform.GetChild(1).transform.Rotate(0f, 0f, SwitchRotate * (-1), Space.Self);
 	_mr.material = OnIndicatorMat;
 	//gameObject.transform.parent.gameObject.GetComponent<SwitchScript>().SwitchOn();
-	_das.UISignal(UIOrder);
+	_das.UISignal();
 	}
 	
 	 void OnDisable()
@@ -33,7 +33,7 @@ public class SwitchActionScript : MonoBehaviour
 	//gameObject.GetComponent<MeshRenderer>().material = IndicatorMat;
 	_mr.material = OffIndicatorMat;
 	//gameObject.transform.parent.gameObject.GetComponent<SwitchScript>().SwitchOff();
-	_das.UISignal(UIOrder);
+	_das.UISignal();
 	}
 
     // Update is called once per frame
